@@ -25,5 +25,14 @@ def calculate(list):
     std_axis_2 = np.std(matrix_3_x_3, axis = 1).tolist()
     std_flatten_matrix = np.std(flatten_matrix).tolist()
 
+    #Calculando os máximos.
+    max_axis_1 = np.max(matrix_3_x_3, axis = 0).tolist()
+    max_axis_2 = np.max(matrix_3_x_3, axis = 1).tolist()
+    max_flatten_matrix = np.max(flatten_matrix).tolist()
+
+    # Calculando os mínimos.
+    min_axis_1 = np.min(matrix_3_x_3, axis = 0).tolist()
+    min_axis_2 = np.min(matrix_3_x_3, axis = 1).tolist()
+    min_flatten_matrix = np.min(flatten_matrix).tolist()
 
     return calculations
