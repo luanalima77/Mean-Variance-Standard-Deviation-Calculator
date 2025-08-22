@@ -19,5 +19,11 @@ def calculate(list):
     var_axis_1 = np.var(matrix_3_x_3, axis = 0).tolist()
     var_axis_2 = np.var(matrix_3_x_3, axis = 1).tolist()
     var_flatten_matrix = np.var(flatten_matrix).tolist()
-    
+
+    #Calculando os desvios-padrão.
+    std_axis_1 = np.std(matrix_3_x_3, axis = 0).tolist()
+    std_axis_2 = np.std(matrix_3_x_3, axis = 1).tolist()
+    std_flatten_matrix = np.std(flatten_matrix).tolist()
+
+
     return calculations
