@@ -9,6 +9,7 @@ def calculate(list):
     matrix_3_x_3 = np.reshape(list, (3,3))
     flatten_matrix = matrix_3_x_3.flatten()
 
+
     #OPERAÇÕES SOLICITADAS.
     #Calculando as médias.
     mean_axis_1 = np.mean(matrix_3_x_3, axis = 0).tolist() 
@@ -39,5 +40,16 @@ def calculate(list):
     sum_axis_1 = np.sum(matrix_3_x_3, axis = 0).tolist()
     sum_axis_2 = np.sum(matrix_3_x_3, axis = 1).tolist()
     sum_flatten_matrix = np.sum(flatten_matrix).tolist()
-    
+
+
+    #RESPOSTA FINAL DOS CÁLCULOS EM DICIONÁRIO.
+    calculations = {
+        'mean': [mean_axis_1, mean_axis_2, mean_flatten_matrix],
+        'variance': [var_axis_1, var_axis_2, var_flatten_matrix],
+        'standard deviation':[std_axis_1, std_axis_2, std_flatten_matrix],
+        'max':[max_axis_1, max_axis_2, max_flatten_matrix],
+        'min': [min_axis_1, min_axis_2, min_flatten_matrix],
+        'sum':[sum_axis_1, sum_axis_2, sum_flatten_matrix]
+    }
+
     return calculations
