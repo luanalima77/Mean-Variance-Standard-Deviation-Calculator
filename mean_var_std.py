@@ -14,5 +14,10 @@ def calculate(list):
     mean_axis_1 = np.mean(matrix_3_x_3, axis = 0).tolist() 
     mean_axis_2 = np.mean(matrix_3_x_3, axis = 1).tolist() 
     mean_flatten_matrix = np.mean(flatten_matrix).tolist()
+
+    #Calculando as variâncias.
+    var_axis_1 = np.var(matrix_3_x_3, axis = 0).tolist()
+    var_axis_2 = np.var(matrix_3_x_3, axis = 1).tolist()
+    var_flatten_matrix = np.var(flatten_matrix).tolist()
     
     return calculations
