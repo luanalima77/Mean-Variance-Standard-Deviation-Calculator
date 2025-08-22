@@ -35,4 +35,9 @@ def calculate(list):
     min_axis_2 = np.min(matrix_3_x_3, axis = 1).tolist()
     min_flatten_matrix = np.min(flatten_matrix).tolist()
 
+    #Calculando as somas.
+    sum_axis_1 = np.sum(matrix_3_x_3, axis = 0).tolist()
+    sum_axis_2 = np.sum(matrix_3_x_3, axis = 1).tolist()
+    sum_flatten_matrix = np.sum(flatten_matrix).tolist()
+    
     return calculations
